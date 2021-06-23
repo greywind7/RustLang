@@ -27,6 +27,13 @@ fn main(){
         i -= 1;
     }
 
+    // There is a while let loop too
+    // It matches conditions and when None arrives, it aborts
+    let mut tee = vec![1,2,3,4];
+    while let Some(v) = tee.pop() {
+        println!("Value is {}",v);
+    }
+
     // for loops work like in python using the iter method
 
     let mut nums = [12,34,122,443,123];
@@ -40,7 +47,7 @@ fn main(){
     println!("\nChanging the array");
     for val in nums.iter_mut(){
         *val += 10;
-        println!("Iterating ... {}",val);
+        println!("Iterating ... {}",i);
     }
 
     // Using range is also possible
