@@ -12,3 +12,10 @@ fn main() {
 
 // cargo run 
 // Compile and run
+
+// cargo check 
+// Check for errors but dont build an executable 
+// Much faster than building a binary 
+
+// cargo build --release 
+// Compiles with optimizations
