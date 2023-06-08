@@ -4,6 +4,14 @@
 // expressions are not terminated by semi colon
 // Otherwise they become statements
 
+// Expressions evaluate to a value
+// Function calls, macro calls, a new scope block are all expressions 
+
+// Functions can be declared anywhere as long as they can be seen by the caller
+// Effectively you can call functions even if they are defined below the current one
+
+// In function signature, the type of the parameters must be declared
+
 fn sum(x:i32,y:i32)->i32{
     x+y
 }
